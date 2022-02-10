@@ -1,0 +1,51 @@
+#navbar{
+    flex-direction: column;
+}
+#home{
+    flex-direction: column;
+    height: 380px;
+}
+#home::before{
+    height: 480px;
+}
+#home p{
+    font-size: 16px;
+}
+#home h1{
+    font-size: 25px;
+}
+
+#services{
+    flex-direction: column;
+}
+#services.box{
+    
+ 
+}
+#navbar{
+ flex-direction: column;
+}
+#clients{
+    flex-wrap: wrap;
+
+}
+#clients img{
+    width: 66px;
+    height: auto;
+}
+.h-primary{
+    font-size: 25px;
+}
+.btn{
+    font-size: 13px;
+    padding: 4px 8px;
+}
+.form-group input{
+    width: 80%;
+padding: auto;
+    
+}
+.form-group textarea{
+    width: 80%;
+    
+}
