@@ -1,51 +1,187 @@
-#navbar{
-    flex-direction: column;
+@media screen and (orientation:portrait){
+/* Css Reset*/
+*{ margin: 0%;
+    padding: 0%;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Mochiy Pop P One', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
+/* CSS variables */
+:root{
+    --navbar-height: 59px;
+}
+/* Navigation */
+#navbar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+/* Navigation bar: Logo and Image  */
+.logo{    
+ margin: 10px 34px;
+}
+.logo img{    
+    height: 60px;
+    margin: 3px 6px;   
+}
+
+
+/*Navigation bar: List styling */
+#navbar ul{
+    display: flex;
+}
+#navbar{
+    flex-direction:column;
+    position: sticky;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: sticky;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 13px;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: rgb(10, 10, 10);
+    background-color: white;
+   
+}
+/* Home section  */
 #home{
+    display: flex;
     flex-direction: column;
-    height: 380px;
+    height: auto;
+    /* padding: 3px 200px; */
+    justify-content: center;
+    align-items: center;
+
 }
 #home::before{
-    height: 480px;
-}
-#home p{
-    font-size: 16px;
+    content: "";
+    background: url('../pizza.jpg')no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
 }
 #home h1{
-    font-size: 25px;
+    color: rgb(6, 7, 6);
+    text-align: center;
+    font-size: 17px;
 }
-
-#services{
-    flex-direction: column;
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 15px;
 }
-#services.box{
-    
- 
-}
-#navbar{
- flex-direction: column;
-}
-#clients{
-    flex-wrap: wrap;
-
-}
-#clients img{
-    width: 66px;
-    height: auto;
-}
+   
+/* Utility Classes  */
 .h-primary{
-    font-size: 25px;
+    padding: 12px;
+    font-size: 17px;
+}
+.h-secondary{
+    padding: 12px;
+    font-size: 15px;
 }
 .btn{
-    font-size: 13px;
-    padding: 4px 8px;
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(129, 77, 61);
+    color: white;
+    margin: 17px;
+    font-size: 14px;
+    border-radius: 10px;
+    cursor: pointer;
 }
-.form-group input{
-    width: 80%;
-padding: auto;
+.center{
+    text-align: center;
+    font-size: 13px;
+}
+
+/* Services Center  */
+
+#services{
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    }
+
+    .box{
+        border: 2px solid red;
+        padding: 34px;
+        margin: 3px 6px;
+        border-radius: 23px;
+        background-color: beige;
+    }
+
+    .box img {
+        height: 160px;
+        width: 200px;
+        display: block;
+        margin: auto;
+    }
+/* Clients section  */
+ #client-section{
+     height: auto;
+     position: relative;
+     background-color: aqua;
+ }
+ .clients{
+     display: flex;
+     justify-content: center;
+     text-align: center;
+
+ }
+ .clients img{
     
+     height: 100px;
+     text-align: center;
+     justify-content: center;
+     margin: 6px;
+ }
+ footer{
+     background-color: black;
+     color: white;
+ }
+ .form-group input {
+    text-align: center;
+    width: 70%;
+    padding: 1px;
+    border: 2px solid black;
+    margin: 11px auto;
+    font-size: 13px;
+    border-radius: 8px;
+    justify-content: center;
 }
 .form-group textarea{
-    width: 80%;
-    
+    width: 70%;
 }
+.btn:hover{
+    background-color: tomato;
+}
+}
+ 

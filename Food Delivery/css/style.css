@@ -1,5 +1,6 @@
+@media screen and (orientation:landscape){
 /* Css Reset*/
-*{ margin: 0%;
+*{  margin: 0%;
     padding: 0%;
     font-family: 'Libre Baskerville', serif;
     font-family: 'Mochiy Pop P One', sans-serif;
@@ -17,8 +18,7 @@ html{
     display: flex;
     align-items: center;
     font-family: 'Libre Baskerville', serif;
-font-family: 'Mochiy Pop P One', sans-serif;
-
+    font-family: 'Mochiy Pop P One', sans-serif;
 }
 /* Navigation bar: Logo and Image  */
 .logo{    
@@ -26,11 +26,8 @@ font-family: 'Mochiy Pop P One', sans-serif;
 }
 .logo img{    
     height: 60px;
-    margin: 3px 6px;
-   
+    margin: 3px 6px;   
 }
-
-
 /*Navigation bar: List styling */
 #navbar ul{
     display: flex;
@@ -53,7 +50,7 @@ font-family: 'Mochiy Pop P One', sans-serif;
 }
 #navbar ul li{
     list-style: none;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 #navbar ul li a{
     color: white;
@@ -190,5 +187,6 @@ font-family: 'Mochiy Pop P One', sans-serif;
 }
 .btn:hover{
     background-color: tomato;
+}
 }
  
